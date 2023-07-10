@@ -20,6 +20,15 @@ return {
       return opts
     end,
   },
+  -- окно Aerial (<leader>lS) всегда слева
+  {
+    "stevearc/aerial.nvim",
+    opts = {
+      layout = {
+        placement = "edge",
+      },
+    },
+  },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
