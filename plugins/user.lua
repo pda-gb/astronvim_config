@@ -9,4 +9,10 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  -- доп. тема 
+  -- {""},
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  -- { "sainnhe/everforest", name = "everforest", priority = 1000 },
+    -- Даже если включена русская раскладка, то nvim-команды будут работать
+  { "aveplen/ruscmd.nvim", priority = 1000 },
 }
