@@ -6,4 +6,7 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  
+  -- подключаем котлин пакет
+  { import = "astrocommunity.pack.kotlin" },
 }
