@@ -8,5 +8,5 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   
   -- подключаем котлин пакет
-  { import = "astrocommunity.pack.kotlin" },
+  -- { import = "astrocommunity.pack.kotlin" },
 }
