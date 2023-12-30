@@ -20,6 +20,12 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- переопределение изменения размеров буфера 
+    ["<C-S-Left>"] = { "<cmd>:vertical resize -1<cr>", desc = "Minimize window (vertical)"},
+    ["<C-S-Right>"] = { "<cmd>:vertical resize +1<cr>", desc = "Maximize window (vertical)"},
+    ["<C-S-Down>"] = { "<cmd>:horizontal resize -1<cr>", desc = "Minimize window (horizontal)"},
+    ["<C-S-Up>"] = { "<cmd>:horizontal resize +1<cr>", desc = "Maximize window (horizontal)"},
   },
   t = {
     -- setting a mapping to false will disable it
