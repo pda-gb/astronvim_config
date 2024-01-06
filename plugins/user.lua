@@ -10,27 +10,19 @@ return {
   --   end,
   -- },
   -- доп. тема 
-  -- {""},
-  { "catppuccin/nvim", name = "catppuccin", 
-    priority = 1000,
-    -- init = function()
-    --   vim.g.catppuccin = "catppuccin"
-    -- end,
-  },
-  { "shaunsingh/nord.nvim", name = "nord"},
-  {"NLKNguyen/papercolor-theme", name = "papercolor"},
-  {"morhetz/gruvbox", name = "gruvbox"},
-  {"romainl/Apprentice", name = "apprentice"},
-  {
-    "xiantang/darcula-dark.nvim",
-    dependencies = {
-        "nvim-treesitter/nvim-treesitter",
-    },
- },
   { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
-  -- { "sainnhe/everforest", name = "everforest", priority = 1000 },
-    -- Даже если включена русская раскладка, то nvim-команды будут работать
-  { "aveplen/ruscmd.nvim", priority = 1000 },
   -- виртуальные подписи к переменным в коде при дебаге
   {"theHamsta/nvim-dap-virtual-text", priority = 1000},
+  -- TODO комментарии
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+    event = "VeryLazy",
+    priority = 1000,
+  },
 }
