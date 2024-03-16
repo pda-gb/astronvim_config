@@ -17,7 +17,8 @@ return {
       "regex",
       "sql",
       "toml",
-      "yaml"
+      "yaml",
+      "kotlin",
 
 
     })
